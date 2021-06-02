@@ -1,7 +1,10 @@
+import { BiHash as icon } from 'react-icons/bi';
+
 export default {
-  name: 'category',
-  title: 'Category',
+  name: 'tags',
+  title: 'Tags',
   type: 'document',
+  icon,
   fields: [
     {
       name: 'title',
@@ -14,4 +17,4 @@ export default {
       type: 'text',
     },
   ],
-}
+};

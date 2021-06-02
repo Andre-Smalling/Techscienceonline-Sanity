@@ -1,7 +1,10 @@
+import { RiArticleLine as icon } from 'react-icons/ri';
+
 export default {
   name: 'post',
   title: 'Post',
   type: 'document',
+  icon,
   fields: [
     {
       name: 'title',
@@ -39,10 +42,10 @@ export default {
       },
     },
     {
-      name: 'categories',
-      title: 'Categories',
+      name: 'tags',
+      title: 'Tags',
       type: 'array',
-      of: [{ type: 'reference', to: { type: 'category' } }],
+      of: [{ type: 'reference', to: { type: 'tags' } }],
     },
     {
       name: 'publishedAt',
